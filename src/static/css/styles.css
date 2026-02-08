@@ -1,4 +1,3 @@
-/* Загальні стилі сторінки: шрифт, фон, відступи, центрування */
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #f5f7fa 0%, #e9efff 40%, #f7f0ff 100%);
@@ -7,7 +6,6 @@ body {
     text-align: center;
 }
 
-/* Основний заголовок сторінки з градієнтним текстом */
 h1 {
     color: #1f2937;
     font-size: 44px;
@@ -24,7 +22,6 @@ h1 {
     padding: 0 12px;
 }
 
-/* Декоративна лінія під заголовком */
 h1::after {
     content: "";
     position: absolute;
@@ -38,14 +35,12 @@ h1::after {
     opacity: 0.9;
 }
 
-/* Абзаци тексту */
 p {
     font-size: 32px;
     font-weight: bold;
     color: #333;
 }
 
-/* Поле введення тексту */
 input[type="text"] {
     padding: 12px 14px;
     width: min(360px, 92vw);
@@ -57,13 +52,11 @@ input[type="text"] {
     box-shadow: 0 8px 24px rgba(31, 41, 55, 0.08);
 }
 
-/* Стан поля введення при фокусі */
 input[type="text"]:focus {
     border-color: rgba(102, 126, 234, 0.75);
     box-shadow: 0 10px 28px rgba(102, 126, 234, 0.18);
 }
 
-/* Кнопка дії */
 button {
     padding: 12px 22px;
     font-size: 16px;
@@ -79,21 +72,18 @@ button {
     transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
-/* Ефект наведення на кнопку */
 button:hover {
     transform: translateY(-2px);
     box-shadow: 0 14px 32px rgba(102, 126, 234, 0.45);
     filter: brightness(1.02);
 }
 
-/* Блок для відображення результатів */
 #result {
     font-size: 18px;
     color: #28a745;
     margin-top: 20px;
 }
 
-/* Контейнер списку пісень (grid) */
 .song-list {
     list-style: none;
     padding: 0;
@@ -105,7 +95,6 @@ button:hover {
     text-align: left;
 }
 
-/* Базовий стиль елемента списку */
 .song-list li {
     background: #fff;
     padding: 15px;
@@ -116,19 +105,16 @@ button:hover {
     box-sizing: border-box;
 }
 
-/* Наведення на елемент списку */
 .song-list li:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
-/* Навігаційний блок */
 nav {
     margin-top: 30px;
 }
 
-/* Посилання в навігації, оформлене як кнопка */
 nav a {
     text-decoration: none;
     color: white;
@@ -144,14 +130,12 @@ nav a {
     transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
-/* Ефект наведення на навігаційне посилання */
 nav a:hover {
     transform: translateY(-2px);
     box-shadow: 0 14px 32px rgba(34, 197, 94, 0.36);
     filter: brightness(1.03);
 }
 
-/* Розширений стиль пісень з градієнтом і великим текстом */
 .song-list li {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: darkblue;
@@ -169,21 +153,18 @@ nav a:hover {
     overflow: hidden;
 }
 
-/* Іконка перед назвою пісні */
 .song-list li::before {
     content: "🎵";
     margin-right: 10px;
     font-size: 24px;
 }
 
-/* Посилений hover-ефект для пісень */
 .song-list li:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     cursor: pointer;
 }
 
-/* Чергування кольорів пісень */
 .song-list li:nth-child(4n+1) {
     background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
 }
@@ -200,12 +181,10 @@ nav a:hover {
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
 }
 
-/* Анімація появи елементів списку */
 .song-list li {
     animation: slideIn 0.5s ease-out;
 }
 
-/* Ключові кадри анімації */
 @keyframes slideIn {
     from {
         opacity: 0;
